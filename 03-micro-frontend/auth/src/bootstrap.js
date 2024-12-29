@@ -29,7 +29,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
 };
 
 if (process.env.NODE_ENV === "development") {
-  const app = document.querySelector("#__iso-marketing");
+  const app = document.querySelector("#__iso-auth");
   if (app) {
     mount(app, { defaultHistory: createBrowserHistory() });
   }
