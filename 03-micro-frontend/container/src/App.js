@@ -30,8 +30,8 @@ const App = () => {
 
   return (
     <>
-      <StylesProvider generateClassName={generateClassName}>
-        <Router history={history}>
+      <Router history={history}>
+        <StylesProvider generateClassName={generateClassName}>
           <Header
             signedIn={isSignedIn}
             onSignOut={() => setIsSignedIn(false)}
@@ -48,8 +48,8 @@ const App = () => {
               <Route path="/" component={MarketingLazy} />
             </Switch>
           </Suspense>
-        </Router>
-      </StylesProvider>
+        </StylesProvider>
+      </Router>
     </>
   );
 };
